@@ -1,0 +1,6 @@
+
+text = "'Master'"
+text2 = "en \"Python\""
+
+joinText = text + " " + text2
+print(joinText)
