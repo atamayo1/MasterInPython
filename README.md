@@ -2,4 +2,4 @@
 Course about master in python
 
 - Hello world
-- Variables, Interpolations, Concatenations and Types
+- Variables, Interpolations, Concatenations, Casting and Types

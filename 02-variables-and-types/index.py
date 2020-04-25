@@ -78,3 +78,24 @@ print(type(rango))
 print(dato_byte)
 #tipo de dato
 print(type(dato_byte))
+
+
+numerito = 776
+print("Castear una variable")
+print(numerito)
+print(type(numerito))
+
+#castear a string
+numerito = str(numerito)
+print(numerito)
+print(type(numerito))
+
+#castear a entero
+numerito = int(numerito)
+print(numerito)
+print(type(numerito))
+
+#castear a float
+numerito = float(numerito)
+print(numerito)
+print(type(numerito))
