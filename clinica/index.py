@@ -127,6 +127,7 @@ def registroPaciente():
 
         if piso == 1:
             contadorPacientePiso1.append("O")
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso1)
             if len(contadorPacientePiso1) == 4:
@@ -138,6 +139,7 @@ def registroPaciente():
 
         if piso == 2:
             contadorPacientePiso2.append("O")
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso2)
             if len(contadorPacientePiso2) == 4:
@@ -149,6 +151,7 @@ def registroPaciente():
 
         if piso == 3:
             contadorPacientePiso3.append("O")
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso3)
             if len(contadorPacientePiso3) == 4:
@@ -160,6 +163,7 @@ def registroPaciente():
 
         if piso == 4:
             contadorPacientePiso4.append("O")
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso4)
             if len(contadorPacientePiso4) == 4:
@@ -171,6 +175,7 @@ def registroPaciente():
 
         if piso == 5:
             contadorPacientePiso5.append("O")
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso5)
             if len(contadorPacientePiso5) == 4:
@@ -213,6 +218,7 @@ def retirarPaciente():
 def buscarPaciente():
     resultado = ""
     cedula = input("Ingrese la cédula a consultar: ")
+
     return resultado
 
 """
