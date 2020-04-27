@@ -126,7 +126,7 @@ def registroPaciente():
     if piso > 0 and piso < 6:
 
         if piso == 1:
-            contadorPacientePiso1.append("O")
+            contadorPacientePiso1.append(1)
             paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso1)
@@ -138,7 +138,7 @@ def registroPaciente():
                         print(f"Piso {piso} ocupado")
 
         if piso == 2:
-            contadorPacientePiso2.append("O")
+            contadorPacientePiso2.append(1)
             paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso2)
@@ -150,7 +150,7 @@ def registroPaciente():
                         print(f"Piso {piso} ocupado")
 
         if piso == 3:
-            contadorPacientePiso3.append("O")
+            contadorPacientePiso3.append(1)
             paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso3)
@@ -162,7 +162,7 @@ def registroPaciente():
                         print(f"Piso {piso} ocupado")
 
         if piso == 4:
-            contadorPacientePiso4.append("O")
+            contadorPacientePiso4.append(1)
             paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso4)
@@ -174,7 +174,7 @@ def registroPaciente():
                         print(f"Piso {piso} ocupado")
 
         if piso == 5:
-            contadorPacientePiso5.append("O")
+            contadorPacientePiso5.append(1)
             paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso5)
