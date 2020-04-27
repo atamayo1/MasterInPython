@@ -199,8 +199,6 @@ def registroPaciente():
 def retirarPaciente():
     resultado = ""
     cedula = input("Ingrese cédula del paciente a retirar: ")
-    for paciente in pacientes:
-        if cedula == paciente
 
     return resultado
 
