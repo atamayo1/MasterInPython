@@ -46,6 +46,7 @@ def mostrarLista(lista):
 def cupoDelPiso():
     resultado = ""
     piso = int(input("Ingrese el piso a consultar: "))
+
     if len(pisosOcupados) == totalPisos:
         resultado = f"Las {totalHabitaciones} habitaciones que dispone la clinica estan llenas"
     else:
@@ -126,7 +127,8 @@ def registroPaciente():
     if piso > 0 and piso < 6:
 
         if piso == 1:
-            contadorPacientePiso1.append("O")
+            contadorPacientePiso1.append(1)
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso1)
             if len(contadorPacientePiso1) == 4:
@@ -137,7 +139,8 @@ def registroPaciente():
                         print(f"Piso {piso} ocupado")
 
         if piso == 2:
-            contadorPacientePiso2.append("O")
+            contadorPacientePiso2.append(1)
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso2)
             if len(contadorPacientePiso2) == 4:
@@ -148,7 +151,8 @@ def registroPaciente():
                         print(f"Piso {piso} ocupado")
 
         if piso == 3:
-            contadorPacientePiso3.append("O")
+            contadorPacientePiso3.append(1)
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso3)
             if len(contadorPacientePiso3) == 4:
@@ -159,7 +163,8 @@ def registroPaciente():
                         print(f"Piso {piso} ocupado")
 
         if piso == 4:
-            contadorPacientePiso4.append("O")
+            contadorPacientePiso4.append(1)
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso4)
             if len(contadorPacientePiso4) == 4:
@@ -170,7 +175,8 @@ def registroPaciente():
                         print(f"Piso {piso} ocupado")
 
         if piso == 5:
-            contadorPacientePiso5.append("O")
+            contadorPacientePiso5.append(1)
+            paciente.append(piso)
             pacientes.append(paciente)
             resultado += str(paciente)+" "+str(contadorPacientePiso5)
             if len(contadorPacientePiso5) == 4:
@@ -199,7 +205,6 @@ def registroPaciente():
 def retirarPaciente():
     resultado = ""
     cedula = input("Ingrese cédula del paciente a retirar: ")
-
     return resultado
 
 """
@@ -240,7 +245,6 @@ def moverPaciente():
 
 def mostrarOcupaciones():
     resultado = ""
-
     return resultado
 
 """
@@ -263,50 +267,64 @@ def iniciarSoftware():
     opcionSeleccionada = int(input("¿Coloque el número de la opción que desea seleccionar del 0 al 6? "))
 
     if opcionSeleccionada >= 0 and opcionSeleccionada < 7:
+
         if opcionSeleccionada == 0:
             print(salir())
+
         if opcionSeleccionada == 1:
             print(cupoDelPiso())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 2:
             print(registroPaciente())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 3:
             print(retirarPaciente())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 4:
             print(buscarPaciente())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 5:
             print(moverPaciente())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 6:
             print(mostrarOcupaciones())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
     else:
         print("Número invalido")
 
