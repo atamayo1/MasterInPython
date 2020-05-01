@@ -46,6 +46,7 @@ def mostrarLista(lista):
 def cupoDelPiso():
     resultado = ""
     piso = int(input("Ingrese el piso a consultar: "))
+
     if len(pisosOcupados) == totalPisos:
         resultado = f"Las {totalHabitaciones} habitaciones que dispone la clinica estan llenas"
     else:
@@ -204,7 +205,6 @@ def registroPaciente():
 def retirarPaciente():
     resultado = ""
     cedula = input("Ingrese cédula del paciente a retirar: ")
-
     return resultado
 
 """
@@ -218,7 +218,6 @@ def retirarPaciente():
 def buscarPaciente():
     resultado = ""
     cedula = input("Ingrese la cédula a consultar: ")
-
     return resultado
 
 """
@@ -246,7 +245,6 @@ def moverPaciente():
 
 def mostrarOcupaciones():
     resultado = ""
-
     return resultado
 
 """
@@ -269,50 +267,64 @@ def iniciarSoftware():
     opcionSeleccionada = int(input("¿Coloque el número de la opción que desea seleccionar del 0 al 6? "))
 
     if opcionSeleccionada >= 0 and opcionSeleccionada < 7:
+
         if opcionSeleccionada == 0:
             print(salir())
+
         if opcionSeleccionada == 1:
             print(cupoDelPiso())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 2:
             print(registroPaciente())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 3:
             print(retirarPaciente())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 4:
             print(buscarPaciente())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 5:
             print(moverPaciente())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
         if opcionSeleccionada == 6:
             print(mostrarOcupaciones())
             continuar = input("Desea realizar otra operacion 'S' para si y 'N' para no: ")
+
             if continuar == "S":
                 print(iniciarSoftware())
             else:
                 print("Gracias por su visita vuelva pronto")
+
     else:
         print("Número invalido")
 
