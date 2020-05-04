@@ -9,5 +9,9 @@ print("############## Numeros que se encuentran dentro de un rango #############
 numOne = int(input("Ingrese el número inicial: "))
 numTwo = int(input("Ingrese el numero final: "))+1
 
-for count in range(numOne, numTwo):
-    print(count)
+if numOne < numTwo:
+    for count in range(numOne, numTwo):
+        print(count)
+else:
+    print("El numero 1 debe ser menor al numero 2")
+        
