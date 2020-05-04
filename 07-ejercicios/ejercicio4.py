@@ -14,6 +14,8 @@ operacion = input("Coloque la operacion, es decir lo que aparece en parentesis: 
 numUser1 = int(input("Ingrese el primer numero: "))
 numUser2 = int(input("Ingrese el segundo numero: "))
 
+print("############## Calculadora ##################")
+
 if operacion == "+":
     print(f"Suma de {numUser1} + {numUser2} = {numUser1+numUser2}")
 elif operacion == "-":
