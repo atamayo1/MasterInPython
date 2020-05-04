@@ -1,0 +1,17 @@
+
+"""
+Ejercicio 2: Escribir un script que nos muestre por pantalla
+todos los numeros pares del 1 al 120
+"""
+
+count = 1
+result = "" 
+
+print("Los numeros pares del 1 al 121 son: ")
+
+for count in range(1, 121):
+    if(count % 2 == 0):
+        result = "par"
+        print(f"El numero {count} es {result}")
+
+    
