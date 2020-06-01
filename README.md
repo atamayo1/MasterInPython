@@ -5,3 +5,4 @@ Course about master in python
 - Variables, Interpolations, Concatenations, Casting and Types
 - Operadores aritméticos, de asignación e incremento
 - Ejercicio de crear 7 funciones de una Clínica
+- Ejercicios en consola
