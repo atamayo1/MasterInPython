@@ -7,7 +7,6 @@ for numCount in range(0, 11):
     print("#####################")
     print(f"Tabla del {numCount}")
     print("#####################")
-    if numCount <= 10:
-        for count in range(1, 11):
-            print(f"{numCount} x {count} = {numCount * count}")
+    for count in range(1, 11):
+        print(f"{numCount} x {count} = {numCount * count}")
 
