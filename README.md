@@ -8,3 +8,4 @@ Course about master in python
 - Condicionales
 - Bucles
 - Ejercicio de crear 7 funciones de una Clínica
+- Ejercicios en consola
