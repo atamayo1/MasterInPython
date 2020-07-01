@@ -9,3 +9,4 @@ Course about master in python
 - Bucles
 - Ejercicio de crear 7 funciones de una Clínica
 - Ejercicios en consola
+- Django
