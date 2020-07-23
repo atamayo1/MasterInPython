@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock %} | Anthony Tamayo
+    </title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="content-layout" class="container">
+        <header>
+            <div id="logotipo" class="d-flex my-2 justify-content-center align-content-center">
+                <img class="mr-3" src="{% static 'images/logo.png' %}" alt=""/>
+                <h3 class="mt-3 text-success">Sitio web con Django</h3>
+            </div>
+        </header>
+    
+        <nav class="nav navbar-expand-lg justify-content-start bg-dark">
+            <li class="nav-item"><a class="nav-link text-light bg-dark" href="/">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-light bg-dark" href="/sobre-nosotros">About</a></li>
+        </nav>
+        <div class="barra">
+            <span class="esquina-izquierda"></span>
+            <span class="relleno-barra"></span>
+            <span class="esquina-derecha"></span>
+        </div>
+       
+        <section id="content" class="my-4 container">
+            <h2>Titulo de prueba del layout</h2>
+            {% block content %}
+            <strong>Contenido del bloque original !!!</strong>
+            {% endblock %}
+        </section>
+    
+        <footer class="my-4 container">
+            Master in Python &copy; Anthony Tamayo Ortega
+        </footer>
+    </div>
+</body>
+</html>
