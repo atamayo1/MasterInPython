@@ -3,6 +3,9 @@ body{
     padding: 0;
     background-color: #f2f2f2;
 }
+h1.title{
+    font-size: 30px;
+}
 header{
     margin: 0 auto;
     width: 84vw;
@@ -33,4 +36,25 @@ header{
     border-right: 20px solid transparent;
     border-top: 10px solid #23282B;
     float: right;
+}
+#content{
+    height: 80vh;
+    width: 82vw;
+    border-radius: 2px;
+    box-sizing: content-box;
+}
+.code-item, .year-item{
+    list-style: none;
+}
+footer{
+    box-shadow: 0px 0px 20px gray;
+}
+.date {
+    display: block;
+    margin: 15px 0;
+    color: gray;
+}
+.content{
+    line-height: 25px;
+    text-align: justify;
 }
