@@ -3,7 +3,19 @@
 {% block title %} Bienvenido al desarrollo {% endblock %}
 
 {% block content %}
-    {{ block.super }} 
-    <h1>{{title}}</h1>
-    <p>{{content}}</p>
+
+    {% comment 'Herencia de layout' %}
+        {{ block.super }}
+    {% endcomment %}
+
+    {% if title %}
+        <h1 class="title">{{title}}</h1>
+    {% else %}
+        <p class="alert-danger">El titulo no existe</p>
+    {% endif %}
+
+    <hr>
+
+    <!--{% include 'mainapp/fecha-actual.html' with saludo="Bienvenido al desarrollo" nombre="Anthony" %}-->
+
 {% endblock %}

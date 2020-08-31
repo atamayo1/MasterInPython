@@ -1,0 +1,12 @@
+<h1>{{saludo}} {{nombre}}</h1>
+{% if titleYears %}
+    <div class="my-2">{{titleYears}}</div>
+{% endif %}
+
+<nav>
+    {% for year in years %}   
+        {% if year|divisibleby:2 == True %}
+            <li class="year-item">{{year}}</li>
+        {% endif %}
+    {% endfor %}
+</nav>

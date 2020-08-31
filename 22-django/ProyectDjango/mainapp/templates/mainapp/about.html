@@ -3,6 +3,38 @@
 {% block title %} Bienvenido al desarrollo {% endblock %}
 
 {% block content %}
-    <h1>{{title}}</h1>
-    <p>{{content}}</p>
+    <h1 class="title">{{title}}</h1>
+    <hr>
+    <!--
+    {% if content %}
+    <p>{{content|cut:"Anthony Tamayo Ortega"}}</p>
+    {% endif %}
+   
+    <nav>
+        {% for code in codes %}
+        {% if forloop.last %}
+            <li class="code-item">{{forloop.counter}}. {{code}} -> Ultimo de la lista</li>
+        {% else %}
+            <li class="code-item">{{forloop.counter}}. {{code}}</li>
+        {% endif %}
+        {% empty %} 
+            <p class="alert-warning">No hay lenguajes que mostrar</p>
+        {% endfor %}
+    </nav>
+
+    {% if titleYears %}
+        <div class="my-2">{{titleYears}}</div>
+    {% endif %}
+
+    {{codes|join:'<br>'}}
+
+    <nav class="my-2">
+        {% for year in years %}   
+            {% if year|divisibleby:2 == True %}
+                <li class="year-item">{{year}}</li>
+            {% endif %}
+        {% endfor %}
+    </nav>
+
 {% endblock %}
+-->
