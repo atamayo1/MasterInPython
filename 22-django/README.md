@@ -16,3 +16,6 @@ $ python3 manage.py runserver
 ## Crear una app [INSTALLED_APPS -> settings.py]
 $ python3 manage.py startapp NombreApp
 
+## Crear el administrador
+$ django-admin startproject NombreDatabase
+
