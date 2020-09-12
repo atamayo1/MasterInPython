@@ -56,5 +56,14 @@ footer{
 }
 .content{
     line-height: 25px;
+}
+p{
     text-align: justify;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+    margin-right: 1vw;
 }

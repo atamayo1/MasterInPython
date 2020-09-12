@@ -7,8 +7,9 @@ class Page(models.Model):
     content = RichTextField(verbose_name="Contenido")
     slug = models.CharField(unique=True, max_length=150, verbose_name="Url amigable")
     visible = models.BooleanField(verbose_name="¿Visible?")
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Creado el:")
-    updated_at = models.DateTimeField(auto_now=True, verbose_name="Actualizado el:")
+    orden = models.IntegerField(default=0, verbose_name="Orden")
+    created_at = models.DateTimeField(auto_now_add=True, blank=True, verbose_name="Creado el:")
+    updated_at = models.DateTimeField(auto_now=True, blank=True, verbose_name="Actualizado el:")
 
 class Meta:
     verbose_name = "Página"
